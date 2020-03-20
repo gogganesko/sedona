@@ -36,7 +36,7 @@ a{
 
 .button{
     font: inherit;
-
+    padding:20px 25px;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
@@ -165,8 +165,33 @@ a{
     list-style: none;
 }
 
-.footer-social-item {
+.footer-social-item{
+    display: block;
     background-color: #81b3d2;
+    width: 46px;
+    height: 48px;
+}
+
+.twitter{
+    background-image: url("../img/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twittertext, .facebooktext, .youtubetext{
+    visibility: hidden;
+}
+
+.facebook{
+    background-image: url("../img/facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.youtube{
+    background-image: url("../img/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .footer-hashtag{
