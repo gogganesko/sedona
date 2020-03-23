@@ -55,13 +55,19 @@ a{
     display: flex;
     justify-content: space-around; 
     align-items: center;
-
+    height: 56px;
     list-style: none;
     margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin: 0;
+    padding: 0;
 }
 
 .site-navigation .logo{
-    min-height: 70px;
+    height: 70px;
 }
 
 .site-navigation a{
@@ -359,13 +365,13 @@ a{
     font-weight: 700;
 }
 
-* { outline: 2px dotted red; }
+/* * { outline: 2px dotted red; }
 * * { outline: 2px dotted green; }
 * * * { outline: 2px dotted orange; }
 * * * * { outline: 2px dotted blue; }
 * * * * * { outline: 1px solid red; }
 * * * * * * { outline: 1px solid green; }
 * * * * * * * { outline: 1px solid orange; }
-* * * * * * * * { outline: 1px solid blue; }
+* * * * * * * * { outline: 1px solid blue; } */
 
 /* space arround, visually-hidden у иконок в футере, ещё два шрифта добавить в фонт фэмили */
