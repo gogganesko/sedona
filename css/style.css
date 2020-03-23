@@ -30,6 +30,12 @@ body{
     background-color: #ffffff;
 }
 
+.main-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 2px 6px 25px 0px rgba(0,0,0,0.75)
+}
+
 a{
     text-decoration: none;
 }
@@ -44,14 +50,25 @@ a{
     border:none;
 }
 
+
 .site-navigation{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+
     list-style: none;
+    margin: 0;
+}
+
+.site-navigation .logo{
+    min-height: 70px;
 }
 
 .site-navigation a{
     text-decoration: none;
     color: #000000;
 }
+
 
 .site-navigation a:hover,
 .site-navigation a:focus{
@@ -63,32 +80,113 @@ a{
 }
 
 .main-intro{
+    display: flex;
+    flex-direction: column;
+
     background-image: url("../img/background_photo.jpg");
     background-position: top center;
+
     background-repeat: no-repeat;
     background-color: #e1eef6;
+    min-height: 490px;
+}
+
+.main-intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.firstword{
+    margin-top: 76px;
+}
+
+.secondword{
+    margin-top: 11px;
+}
+
+.thirdword{
+    margin-top: 68px;
+}
+
+.fourthword{
+    margin-top: 56px;
+}
+
+.main-intro-shape{
+    max-height: 57px;
 }
 
 .main-reasons-intro-top{
     color: #000000;
     text-align: center;
     font-size: 21px;
+    margin-top: 61px;
 }
 
 .main-reasons-intro-bot{
+    margin-top: 38px;
     color: #a0a0a0;
     text-align: center;
 }
 
 .reasons-list{
+    display: flex;
+    flex-wrap: wrap;
+
     list-style: none;
+    margin: 0;
+    margin-top: 56px;
+    padding: 0;
 }
 
 .reasons-list-item-img{
+    width: 100%;
+    display: flex;
     background-color: #81b3d2;
+
+}
+
+.reasons-list-item-img .item-column{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.reasons-list-item-img .item-columnimage{
+    flex-grow:2;
+
+    margin:0;
+    padding: 0;
+}
+
+.reasons-list-item-img .item-columnimage img{
+    width: 100%;
+    height: 100%;
+}
+
+.reasons-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reasons-list-item img{
+    margin-top: 61px;
 }
 
 .reasons-list-item span{
+    margin-top: 33px;
     font-size: 21px;
     font-weight: 700;
 }
@@ -96,6 +194,17 @@ a{
 .reasons-list-item p{
     font-size: 14px;
     color:#a0a0a0;
+    text-align: center;
+}
+
+.reasons-list-item-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.grey{
+    background-color: #eeeeee;
 }
 
 .reasons-list-item-img p{
@@ -114,20 +223,32 @@ a{
     text-align: center;
 }
 
+.main-searchform-title{
+    margin-top: 57px;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-searchform-title span{
     font-size: 30px;
     font-weight: 700;
 }
 
 .main-searchform-title p{
+    margin-top: 35px;
+    text-align: center;
     font-size: 14px;
     color: #a0a0a0;
 }
 
 .main-searchform-title button{
+    margin-top: 35px;
     font:inherit;
     color:#ffffff;
-
+    width: 568px;
+    font-size: 21px;
     background-color: #766357;
 }
 
@@ -140,14 +261,30 @@ a{
     background-color: #503e33;
 }
 
+
+
 .main-searchform-modalform input[type="date"]{
     font: inherit;
+    width: 346px;
     border: 0px;
 }
 
+.main-searchform-modalform input[type="number"]{
+    font: inherit;
+    width: 114px;
+    border: 0px;
+}
+
+#modalform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
 .search-button{
     background-color: #81b3d2;
-
     color: #ffffff;
 }
 
@@ -161,15 +298,32 @@ a{
     color: #94b9d2;
 }
 
+.main-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-social{
+    display: flex;
+}
+
 .footer-social ul{
     list-style: none;
 }
 
 .footer-social-item{
+    margin-left: 6px;
     display: block;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
+}
+
+.footer-social-item a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
 }
 
 .twitter{
@@ -194,7 +348,24 @@ a{
     background-position: center;
 }
 
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .footer-hashtag{
     font-size: 21px;
     font-weight: 700;
 }
+
+* { outline: 2px dotted red; }
+* * { outline: 2px dotted green; }
+* * * { outline: 2px dotted orange; }
+* * * * { outline: 2px dotted blue; }
+* * * * * { outline: 1px solid red; }
+* * * * * * { outline: 1px solid green; }
+* * * * * * * { outline: 1px solid orange; }
+* * * * * * * * { outline: 1px solid blue; }
+
+/* space arround, visually-hidden у иконок в футере, ещё два шрифта добавить в фонт фэмили */
