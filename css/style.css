@@ -50,12 +50,22 @@ a{
     border:none;
 }
 
+.main-navigation{
+    width: 1200px;
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    height: 56px;
+    background-color: #ffffff;
+}
 
 .site-navigation{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around; 
     align-items: center;
     height: 56px;
+    width: 531px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -132,6 +142,7 @@ a{
     text-align: center;
     font-size: 21px;
     margin-top: 61px;
+    word-wrap: normal;  
 }
 
 .main-reasons-intro-bot{
@@ -152,14 +163,16 @@ a{
 }
 
 .reasons-list-item-img{
-    width: 100%;
+    width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     background-color: #81b3d2;
 
 }
 
 .reasons-list-item-img .item-column{
-    flex-grow:1;
+    /* flex-grow:1; */
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -172,7 +185,7 @@ a{
 
 .reasons-list-item-img .item-columnimage{
     flex-grow:2;
-
+    width: 800px;
     margin:0;
     padding: 0;
 }
@@ -184,6 +197,7 @@ a{
 
 .reasons-list-item{
     display: flex;
+    width: 400px;
     flex-direction: column;
     align-items: center;
 }
@@ -207,6 +221,7 @@ a{
 
 .reasons-list-item-wrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
 }
@@ -333,6 +348,10 @@ a{
     height: 48px;
 }
 
+.footer-social-item:hover{
+    background-color: #669ec1;
+}
+
 .footer-social-item a{
     display: inline-block;
     width:100%;
@@ -372,13 +391,13 @@ a{
     font-weight: 700;
 }
 
-/* * { outline: 2px dotted red; }
+* { outline: 2px dotted red; }
 * * { outline: 2px dotted green; }
 * * * { outline: 2px dotted orange; }
 * * * * { outline: 2px dotted blue; }
 * * * * * { outline: 1px solid red; }
 * * * * * * { outline: 1px solid green; }
 * * * * * * * { outline: 1px solid orange; }
-* * * * * * * * { outline: 1px solid blue; } */
+* * * * * * * * { outline: 1px solid blue; }
 
 /* space arround, visually-hidden у иконок в футере, ещё два шрифта добавить в фонт фэмили */
